@@ -26,13 +26,14 @@ navMenuBtn.addEventListener('click', function(){
 });
 
 navLogin.addEventListener('click', function(){
-    const mainContainer = document.querySelector('.mainContainer');
     const loginContainer = document.querySelector('.loginContainer');
     const tutorialContainer = document.querySelector('.tutorialContainer');
-
-    hiddenClassAdd(mainContainer);
+    const video = document.querySelector('#video');
+    const canvas = document.querySelector('#canvas');
     hiddenClassAdd(tutorialContainer);
     hiddenClassAdd(signupBox);
+    hiddenClassAdd(video);
+    hiddenClassAdd(canvas);
     hiddenClassRemove(loginContainer);
     hiddenClassRemove(loginBox);
 })

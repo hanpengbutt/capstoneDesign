@@ -38,7 +38,7 @@
 
 body {
   margin: 0px;
-  height: 100%;
+  min-height: 100vh;
 }
 body .hidden {
   display: none;
@@ -168,6 +168,9 @@ nav ul .navMenu .navMenuBtn img {
 }
 .mainContainer button:hover {
   background-color: #685cec;
+  transition: 0.4s;
+}
+.mainContainer button:hover a {
   color: white;
   transition: 0.4s;
 }
@@ -313,6 +316,24 @@ nav ul .navMenu .navMenuBtn img {
 }
 .loginContainer .hidden {
   display: none;
+}
+
+.tutorialContainer .tutorialBox {
+  display: flex;
+  justify-content: center;
+}
+.tutorialContainer .tutorialBox .tutorialVideo {
+  width: 80%;
+  height: 45.04vw;
+  margin-top: 80px;
+}
+.tutorialContainer .tutorialBox .visibilityHidden {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+  border: 0px;
+  border: none;
+  margin-top: 0px;
 }
 
 @media screen and (max-width: 1024px) {
